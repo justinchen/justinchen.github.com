@@ -1,8 +1,38 @@
-<html>
-	<head>
-		<title>Justin Chen</title>
-	</head>
-	<body>
-		<h1>Hello World</h1>
-	</body>
-</html>
+---
+title: Justin Chen's Homepage
+---
+<h1>Justin Chen</h1>
+<p>Temporary homepage for Justin Chen. </p>
+<h2>More about me</h2>
+<ul>
+	<li>
+		<a href="http://blog.justinchen.net/">Personal Blog</a>
+	</li>
+	<li>
+		<a href="http://twitter.com/jc22">Twitter</a>
+	</li>
+	<li>
+		<a href="http://www.linkedin.com/in/justinchen">LinkedIn</a>
+	</li>
+</ul>
+<h2>Companies</h2>
+<ul>
+	<li>
+		<a href="http://www.menuism.com/">Menuism</a>
+	</li>
+	<li>
+		<a href="http://www.theweddinglens.com/">The Wedding Lens</a>
+	</li>
+	<li>
+		<a href="http://www.pickfu.com/">PickFu</a>
+	</li>
+</ul>
+<h2>Posts</h2>
+<ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+
